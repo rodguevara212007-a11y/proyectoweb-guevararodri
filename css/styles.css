@@ -6,7 +6,7 @@
     font-family: 'Arial', sans-serif;
 }
 
-header {
+.header {
     background: #ffffff;
     color: #380c0c;
     padding: 1rem;
@@ -14,6 +14,13 @@ header {
     width: 100%;
     z-index: 1000;
 }
+
+.header-inner {
+   display: flex;
+   align-items: center;
+   width: 100%;
+}
+
 
 /* Estilos para el contenedor del logo y el título */
 .logo {
@@ -34,12 +41,15 @@ header {
   }
   
   /* BOTONES DE INICIO Y BARRA DE NAVEGACIÓN */
-.nav ul {
+
+
+.main-nav ul{
+    margin-left: auto;
     display: flex;
     list-style: none;
 }
 
-.nav ul li a {
+.main-nav ul li a {
   color:#380c0c;
   text-decoration: none;
   margin-left: 2rem;
@@ -48,9 +58,9 @@ header {
   gap: 15px; /*Espacio entre las secciones del menú nav */
   }
   
-.nav-button {
-background-color: #9AAF94;
-color: #333333;
+.btn-shop {
+background-color: #46f40c;
+color: #200ae2;
   padding: 10px 20px;
   margin-left: 15px;
   border-radius: 10px;
@@ -63,4 +73,93 @@ color: #333333;
 .nav-button:hover {
 background-color: #7F966F;
 transform: scale(1.05);
+  }
+  .footer {
+    display: flex;
+    width: 100%;
+  }
+  .footer-social {
+    background-color: #E8A0BF;
+    padding: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #333333;
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: left;
+  }
+  
+  @media (min-width: 768px) {
+  .footer-grid {
+  grid-template-columns: 1fr 1fr;
+  }
+  }
+  
+  .contacto, .redes-sociales {
+  padding: 0 10px;
+  }
+  
+  .contacto h3, .redes-sociales h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  }
+  
+  .contacto address p {
+  margin: 5px 0;
+  }
+  
+    .contacto a {
+    color: #F5EFE8;
+    text-decoration: none;
+    transition: color 0.3s;
+    }
+  
+  .contacto a:hover {
+  text-decoration: underline;
+  }
+  
+  .redes-iconos a {
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+  }
+  
+    .redes-iconos a:hover {
+    color: #9AAF94;
+    }
+  
+    .footer-bottom {
+    border-top: 1px solid #9AAF94;
+  padding-top: 20px;
+  position: relative;
   }
