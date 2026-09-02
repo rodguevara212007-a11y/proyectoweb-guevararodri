@@ -7,8 +7,8 @@
 }
 
 .header {
-    background: #ffffff;
-    color: #380c0c;
+    background: #ffe1e1;
+    color: #ff00a6;
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -27,8 +27,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  
-}
+  }
   
 .logo img {
   border-radius: 100px;
@@ -37,20 +36,22 @@
   }
   
 .header h1 {
-  margin: 0;
-  }
+    margin: 0;
+    }
   
   /* BOTONES DE INICIO Y BARRA DE NAVEGACIÓN */
 
+.main-nav{
+  margin-left: auto;
+  }
 
-.main-nav ul{
-    margin-left: auto;
-    display: flex;
-    list-style: none;
-}
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  }
 
-.main-nav ul li a {
-  color:#380c0c;
+.main-nav ul li a{
+  color:#01353c;
   text-decoration: none;
   margin-left: 2rem;
   display: flex;
@@ -59,8 +60,8 @@
   }
   
 .btn-shop {
-background-color: #46f40c;
-color: #200ae2;
+  background-color: #4cff1a;
+  color: #ff0000;
   padding: 10px 20px;
   margin-left: 15px;
   border-radius: 10px;
@@ -71,17 +72,20 @@ color: #200ae2;
   }
   
 .nav-button:hover {
-background-color: #7F966F;
-transform: scale(1.05);
-  }
-  .footer {
-    display: flex;
+    background-color: #7f966f;
+    transform: scale(1.05);
+    }
+
+  footer {
     width: 100%;
+    display: block;
   }
+
   .footer-social {
+    width: 100%;
     background-color: #E8A0BF;
-    padding: 20px 0;
-}
+    padding: 25px 0;
+  }
 
 .social-icons {
     display: flex;
@@ -94,72 +98,17 @@ transform: scale(1.05);
     color: white;
     font-size: 24px;
     text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s ease;
+    
 }
 
 .social-icons a:hover {
-    color: #333333;
-    transform: scale(1.2);
+    color: #9AAF94;
 }
 
 .footer-bottom {
-    background-color: #333333;
+    width: 100%;
+    background-color: #f00f0f;
     color: white;
     text-align: center;
-    padding: 15px 0;
-    font-size: 14px;
+    padding: 20px 0;
 }
-footer-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  max-width: 800px;
-  margin: 0 auto 20px;
-  text-align: left;
-  }
-  
-  @media (min-width: 768px) {
-  .footer-grid {
-  grid-template-columns: 1fr 1fr;
-  }
-  }
-  
-  .contacto, .redes-sociales {
-  padding: 0 10px;
-  }
-  
-  .contacto h3, .redes-sociales h3 {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-  }
-  
-  .contacto address p {
-  margin: 5px 0;
-  }
-  
-    .contacto a {
-    color: #F5EFE8;
-    text-decoration: none;
-    transition: color 0.3s;
-    }
-  
-  .contacto a:hover {
-  text-decoration: underline;
-  }
-  
-  .redes-iconos a {
-  color: #ffffff;
-  margin: 0 10px;
-  font-size: 24px;
-  transition: color 0.3s;
-  }
-  
-    .redes-iconos a:hover {
-    color: #9AAF94;
-    }
-  
-    .footer-bottom {
-    border-top: 1px solid #9AAF94;
-  padding-top: 20px;
-  position: relative;
-  }
