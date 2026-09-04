@@ -40,45 +40,54 @@
 <!-- AQUÍ INICIA EL MAIN   -->
   <main>
     <!--HERO con video, si no quiero video es posible casmbiarlo a otra cosa-->
-    <!-- El HERO es el tipo carrusel que se ve al i9nicio de la pagina-->
-    <section class="hero video-hero">
-      <video class="hero-video" id="heroVideo" autoplay loop playsinline>
-        <source src="img/Video_pies_con_cora.mp4" type="video/mp4" />
-      </video>
-      <div class="hero-overlay"></div>
+    <!-- El HERO es el tipo carrusel que se ve al inicio de la pagina-->
+      <section class="hero carousel-hero" id="heroVideo">
+  <!-- Carrusel con las imágenes de tu restaurante -->
+  <div class="carousel-container">
+    <div class="slide active" style="background-image: url('img/MENU.jpg');"></div>
+    <div class="slide" style="background-image: url('img/RESERVA.jpg');"></div>
+    <div class="slide" style="background-image: url('img/CONTACTOS.jpg');"></div>
+    <div class="slide" style="background-image: url('img/ENTRADA.jpg');"></div>
+  </div>
 
-     <!--Estos son los botones que se encuentran dentro del video "HERO"-->
-      <div class="hero-content container">
-        <div class="hero-actions">
-          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Shop</a>
-          <a class="btn outline" href="#voluntariado">Talleres</a>
-        </div>
-        <!--Estas tarjetas es para colocar estadisticas, esta clase de SAT es para
-        colocar datos importantes-->
-        <!--Se debe adaptar los datos a floria-->
-          <div class="stats-grid">
-            <div class="stat">
-            <div class="stat-number">+1,000</div>
-            <div class="stat-label">variedadad de menú</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">+12.000</div>
-            <div class="stat-label">Docentes capacitados</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">+300</div>
-            <div class="stat-label">Colegios acompañados</div>
-          </div>
-        </div>
+  <div class="hero-overlay"></div>
+
+  <!-- Botones ajustados a la experiencia del restaurante -->
+  <div class="hero-content container">
+    <div class="hero-actions">
+      <a class="btn primary" href="#menu">Ver Menú</a>
+      <a class="btn outline" href="#reservas">Reservar Mesa</a>
+    </div>
+
+    <!-- Estadísticas adaptadas a Restaurante Rodrigo -->
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-number">+50</div>
+        <div class="stat-label">Platillos Exquisitos</div>
       </div>
-    </section>
+      <div class="stat">
+        <div class="stat-number">+10,000</div>
+        <div class="stat-label">Clientes Satisfechos</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">15+</div>
+        <div class="stat-label">Años de Tradición</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+      
+        
+          
     <!--Fin hero y cierra las estadísticas y todo-->
 
     <!--Aqui hay 3 tarjetas para destacar proyectos, ventas, productos o servicios-->
 
     <section id="proyectos" class="projects container">
       <h2>Restaurante Rodrigo</h2>
-      <p class="lead">Descubre nuestra variedad de comida y nuestra calidad de servicio.</p>
+      <p class="lead">Descubre nuestra variedad de comida y  calidad de servicio.</p>
 
       <div class="project-cards">
 
@@ -86,11 +95,11 @@
           <div class="card-img" id="antioquia-caucasia"></div>
           <div class="card-body">
             <h3>Menú</h3>
-            <p> Disfruta de nuestros selectos cortes de carne a la parrilla,
-              desde un excelente Rib eye hasta una clásica Picaña, acompañados 
-              de  pastas artesanales como nuestro tradicional Spaghetti
-              Carbonara. Contamos también con opciones vegetarianas y sugerencias 
-              del chef para acompañar tu mesa.</p>
+            <p> Disfruta de exclusivos cortes a la parrilla,
+                desde un impecable Rib Eye hasta la clásica Picaña,
+                perfectamente acompañados de pastas artesanales como
+                nuestro tradicional Spaghetti alla Carbonara. 
+                También ofrecemos exquisitas opciones vegetarianas.</p>
           </div>
         </article>
 
@@ -98,10 +107,10 @@
           <div class="card-img" id="guajira"></div>
           <div class="card-body">
             <h3>Reservas</h3>
-            <p>Asegura tu lugar en minutos. Elige la fecha,
-              hora y número de acompañantes; dinos si celebras
-              una ocasión especial y nos encargaremos de tener 
-              la mesa lista para ti.. </p>
+            <p>¡Reserva en minutos! Elige fecha,
+              hora y número de personas. Dinos
+              si celebras algo especial y nos encargaremos 
+              de tener tu mesa lista.</p>
           </div>
         </article>
 
@@ -109,9 +118,9 @@
           <div class="card-img" id="cordoba"></div>
           <div class="card-body">
             <h3>Contacto</h3>
-            <p>Visítanos en nuestra ubicación principal 
-              con estacionamiento disponible, o contáctanos 
-              por WhatsApp para dudas y eventos especiales. </p>
+            <p>Encuéntranos en nuestra ubicación principal  o escríbenos
+               por WhatsApp para resolver tus dudas y planear tus eventos
+               especiales. </p>
           </div>
         </article>
       </div>
@@ -121,8 +130,8 @@
     <section id="contacto" class="newsletter">
       <div class="container newsletter-inner">
         <div>
-          <h2>¡No te pierdas lo último!</h2>
-          <p>Suscríbete para recibir noticias e historias.</p>
+          <h2>¡Sé el primero en probar lo nuevo! </h2>
+          <p>Déjanos tu correo y te regalamos un descuento en tu próxima visita.</p>
         </div>
         <form id="subscribeForm" class="subscribe-form" novalidate>
           <input id="email" type="email" placeholder="Tu correo electrónico" required />
@@ -134,31 +143,26 @@
   </main>
 
   <!--AQUI INICIA EL FOOTER-->
-    <footer>
+      <footer>
 
     <div class="footer-social">
     <div class="container social-icons">
 
-      <a href="https://www.facebook.com/" aria-label="Facebook">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
+      <a href="https://www.facebook.com/share/1G79xnSmqr/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
 
-      <a href="https://www.instagram.com/" aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
+    
+    <a href="https://www.instagram.com/_rodrigo_guevara_?igsi=Z2h1Y201bHZsZzhv" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
 
-      <a href="https://www.youtube.com/" aria-label="YouTube">
-        <i class="fa-brands fa-youtube"></i>
-      </a>
-
-      <a href="https://www.linkedin.com/" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin-in"></i>
-      </a>
-
-      <a href="https://x.com/" aria-label="X (Twitter)">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-
+    
+    <a href="https://wa.me/525623904124?text=Hola,%20quisiera%20pedir%20informaci%C3%B3n%20para%20realizar%20una reservacion" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  
+  
   </div>
   </div>
 
@@ -169,10 +173,13 @@
   </div>
 
   </footer>
+  <script src="js/script.js"></script>
 </body>
 <!--Google Fonts para agregar fuentes personalizadas,Embed Code,Lobster Two, Caveat, Great Vibes y Playwrite Brasil Guildes-->
 
 </html>
+
+
 
 
   
